@@ -1,30 +1,55 @@
-.Instagram{
-    background-color: #E1306C;
-    color: white;
+.Instagram {
+  background-color: #e1306c;
+  color: white;
 }
-.read_more{
-    background-color: #eeecec;
-    border: none;
-    color:#E1306C;
-    
+.read_more {
+  background-color: #eeecec;
+  border: none;
+  color: #e1306c;
 }
-.Socials{
-    margin: auto;
-    width: 90vw;
+.Socials {
+  margin: auto;
+  width: 90vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+
+  & div {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 25px;
+    height: 70vh;
 
-    & div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        &.Twitter, &.YouTube{
-            border: 1px solid black;
-        }
+    & p {
+      margin: 15px;
+      text-align: center;
     }
-}
 
+    &.Twitter,
+    &.YouTube {
+      border: 1px solid black;
+    }
+
+    & button {
+      margin-bottom: 20px;
+      border-radius: 50px;
+      width: 15vw;
+      height: 5vh;
+      background-color: black;
+      color: white;
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.read_more {
+        background-color: white;
+        color: #e1306c;
+      }
+    }
+  }
+}
