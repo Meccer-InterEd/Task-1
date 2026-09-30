@@ -8,3 +8,23 @@
     color:#E1306C;
     
 }
+.Socials{
+    margin: auto;
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+
+    & div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        &.Twitter, &.YouTube{
+            border: 1px solid black;
+        }
+    }
+}
+
